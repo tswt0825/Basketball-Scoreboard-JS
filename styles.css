@@ -1,19 +1,56 @@
 .container {
   display: flex;
   flex-direction: column;
-  background: #76b3e9;
+  background: #223e56;
   padding: 20px;
   border-radius: 8px;
-  width: 240px;
+  width: 300px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .scoreboard {
   display: flex;
-  justify-content: space-between;
   font-size: 30px;
   font-weight: bold;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.scoreboard h3 {
+  margin: 0 0 5px 0; /* fjern topp-margin, legg litt spacing under */
+  font-size: 25px;
+}
+
+#homeScore,
+#guestScore {
+  background: #000; /* svart bakgrunn */
+  color: #dc4d26; /* neon grønn (ser digital ut) */
+  font-family: "Courier New", monospace; /* digital stil */
+  font-size: 48px; /* stort og tydelig */
+  padding: 10px 20px;
+  border-radius: 8px; /* litt avrundede hjørner */
+  display: inline-block;
+  min-width: 80px; /* så de ikke hopper rundt ved små tall */
+  text-align: center; /* tallene alltid midtstilt */
+  box-shadow: 0 0 15px #dc4d26; /* glød-effekt rundt teksten */
+}
+
+button {
+  background: #223e56; /* match bakgrunnsfarge */
+  color: #fff; /* hvit tekst */
+  border: 2px solid #fff; /* hvit kantlinje */
+  border-radius: 8px; /* avrundede hjørner */
+  cursor: pointer;
+}
+
+#resetBtn {
+  background: #f0f7f0; /* rød bakgrunn for reset */
+  color: #dc4d26;
+  font-size: bold;
+  border: none; /* ingen kantlinje */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtil skygge */
+  margin-top: 15px; /* litt spacing over knappen */
+  padding: 10px 20px; /* litt padding for bedre klikk-område */
+  cursor: pointer; /* pekeren blir en hånd ved hover */
 }
