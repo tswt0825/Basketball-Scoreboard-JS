@@ -82,10 +82,9 @@ button:hover {
   src: url(CursedTimerUlil-Aznm.ttf) format("truetype");
 }
 
-/* Styling for skjermer som er mindre enn 600px */
-@media (max-width: 360px) {
+Styling for skjermer som er mindre enn 600px @media (max-width: 360px) {
   .container {
-    width: 100%; /* tar hele bredden på mobil */
-    font-size: 14px; /* litt mindre tekst */
+    width: 100%;
+    font-size: 14px;
   }
 }
