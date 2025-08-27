@@ -35,7 +35,7 @@ body {
 #guestScore {
   background: #000; /* svart bakgrunn */
   color: #dc4d26;
-  font-family: "Courier New", monospace; /* digital stil */
+  font-family: basketballfont; /* digital stil */
   font-size: 48px; /* stort og tydelig */
   padding: 10px 20px;
   border-radius: 8px; /* litt avrundede hjørner */
@@ -75,4 +75,17 @@ button:hover {
   justify-content: center;
   gap: 120px; /* avstanden mellom knappene */
   margin-top: 8px;
+}
+
+@font-face {
+  font-family: basketballFont;
+  src: url(CursedTimerUlil-Aznm.ttf) format("truetype");
+}
+
+/* Styling for skjermer som er mindre enn 600px */
+@media (max-width: 360px) {
+  .container {
+    width: 100%; /* tar hele bredden på mobil */
+    font-size: 14px; /* litt mindre tekst */
+  }
 }
